@@ -10,24 +10,12 @@
       color: white;
     }
     h1{
-      font-size: 70px;
-      position: relative;
-      color: white;
-      z-index: 5;
-      margin-left: 60px;
-    }
-    h2{
-      font-size: 30px;
-      position: relative;
-      z-index: 5;
-      margin-left: 20px;
+      font-size: 60px;
+      margin-bottom: 10px;
     }
     h3{
-      font-size: 24px;
-      position: relative;
       color: #009DFF;
-      z-index: 5;
-      margin-left: 60px;
+      margin-bottom: 20px;
     }
     nav{
       display: flex;
@@ -40,27 +28,50 @@
       gap: 25px;
     }
     .home-link{
-      font-size: 56px;
-      margin-left: 50px;
-      margin-top: 10px;
+      font-size: 28px;
       font-weight: bold;
       color: white;
+      text-decoration: none;
     }
     .sub-link{
       font-size: 16px;
-      text-decoration: none;
-      transition: color 0.3s;
       color: white;
+      text-decoration: nonte;
+      transition: color 0.3s
     }
     .sub-link:hover{
       color: #009DFF
     }
     .text-box{
-      color: white;
-      padding: 20px;
-      margin: 20px;
+      max-width: 600px;
+    }
+    .main{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 60px 80px;
+    }
+    p{
+      font-size: 18px;
+      line-height: 1.6;
+    }
+    .main img{
+      width: 350px;
+      border-radius: 16px;
+    }
+    .info{
+      padding: 40px 80px;
+    }
+    .info-text{
+      display: flex;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .info-box{
+      background-color: #0c2538;
+      padding: 25px;
       border-radius: 10px;
-      width: 578px;
+      width: 45%;
     }
   </style>
 </head>
@@ -76,15 +87,36 @@
     </div>
   </nav> 
 
-  <h1>I'm Colin Grant</h1>
-  <h3>Computer Science Major Studying Embedded Systems and Robotics</h3>
+  <div class="main">
+    <div class="text-box">
+      <h1>I'm Colin Grant</h1>
+      <h3>Computer Science Major Studying Embedded Systems and Robotics</h3>
+      <p>
+        I am a sophomore at Kent State University majoring in Computer Science. I am also aspiring to earn a minor in Electronics to better understand circuitry. In my free time I enjoy baking,woodcarving, and coding.
+      </p>
+    </div>
+    <img src="./assets/nicephoto.jpg" alt="Nice Photo" width="522" height="348" style="display:block;margin:-300px 950px">
+  </div>
 
-  <div class="text-box">
-      <h2>I am a sophomore at Kent State University majoring in Computer Science. I am also aspiring to earn a minor in Electronics to better understand circuitry. In my free time I enjoy baking,woodcarving, and coding.</h2>
-  </div> 
-
-  <img src="./assets/nicephoto.jpg" alt="Nice Photo" width="522" height="348" style="display:block;margin:-300px 950px">
-
-
+  <div class="info">
+    <div class="info-text">
+      <div class="info-box">
+        <h2>My Interests & Focus</h2>
+        <p>
+          I am particularly interested in embedded systems, robotics, and low-level programming. 
+          I enjoy working with microcontrollers like Arduino and ESP32, and building projects 
+          that combine hardware and software.
+        </p>
+      </div>
+      <div class = "info-box">
+        <h2>Contact Me</h2>
+        <p>
+          Email: crgrant24@gmail.com<br>
+          <a href="https://linkedin.com/in/colin-grant-3062cg">LinkedIn</a>: Colin Grant<br>
+          <a href="https://github.com/dadoge217">GitHub</a>: dadoge217<br>
+        </p>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
