@@ -1,42 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Colin's Awesome Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-
-
-<body>
-  <div class="body"></div>
+  <title>Colin's Portfolio</title>
   <style>
-    .rectangle{
-      background-color: blue;
-    }
-    .circle{
-      height: 150px;
-      background-color: blue;
-      border-radius: 50%;
-    }
-    .banner{
-      width: 100%;
-      height: 150px;
-    }
-    .top{
-      position: absolute;
-      top: 25px;
-    }
-    .bottom{
-      position: absolute;
-      bottom: 50px;
-    }
-    .background{
-      z-index: 1;
-    }
-    .foreground{
-      z-index: 5;
-    }
     body{
+      margin: 0;
       background-color: #081B29;
+      font-family: Arial, sans-serif;
+      color: white;
     }
     h1{
       font-size: 70px;
@@ -62,10 +33,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+      padding: 20px 50px;
     }
     .nav-right{
       display: flex;
-      gap: 20px;
+      gap: 25px;
     }
     .home-link{
       font-size: 56px;
@@ -75,10 +47,13 @@
       color: white;
     }
     .sub-link{
-      font-size: 18px;
-      margin-top: 10px;
-      margin-right: 50px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: color 0.3s;
       color: white;
+    }
+    .sub-link:hover{
+      color: #009DFF
     }
     .text-box{
       color: white;
@@ -88,24 +63,27 @@
       width: 578px;
     }
   </style>
-<nav>
-  <a href="index.html" class="home-link">Colin's Website</a>
-  <div class="nav-right">
-    <a href="projects.html" class="sub-link">Projects</a>
-    <a href="research.html" class="sub-link">Research</a>
-    <a href="experience.html" class="sub-link">Experience</a>
-    <a href="personal.html" class="sub-link">Personal</a>
-  </div>
-</nav> 
+</head>
 
-<h1>I'm Colin Grant</h1>
-<h3>Computer Science Major Studying Embedded Systems and Robotics</h3>
+<body>
+  <nav>
+    <a href="index.html" class="home-link">Colin's Website</a>
+    <div class="nav-right">
+      <a href="projects.html" class="sub-link">Projects</a>
+      <a href="research.html" class="sub-link">Research</a>
+      <a href="experience.html" class="sub-link">Experience</a>
+      <a href="personal.html" class="sub-link">Personal</a>
+    </div>
+  </nav> 
 
-<div class="text-box">
-    <h2>I am a sophomore at Kent State University majoring in Computer Science. I am also aspiring to earn a minor in Electronics to better understand circuitry. In my free time I enjoy baking,woodcarving, and coding.</h2>
-</div> 
+  <h1>I'm Colin Grant</h1>
+  <h3>Computer Science Major Studying Embedded Systems and Robotics</h3>
 
-<img src="./assets/nicephoto.jpg" alt="Nice Photo" width="522" height="348" style="display:block;margin:-300px 950px">
+  <div class="text-box">
+      <h2>I am a sophomore at Kent State University majoring in Computer Science. I am also aspiring to earn a minor in Electronics to better understand circuitry. In my free time I enjoy baking,woodcarving, and coding.</h2>
+  </div> 
+
+  <img src="./assets/nicephoto.jpg" alt="Nice Photo" width="522" height="348" style="display:block;margin:-300px 950px">
 
 
 </body>
